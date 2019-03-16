@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const Container = styled.div`
   background: #fff;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  margin-bottom: 1.45rem;
 `;
 
 const ContainerInner = styled.div`

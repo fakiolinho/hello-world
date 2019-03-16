@@ -1,9 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Header from './header';
-//import './layout.css';
+
+const Inner = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem;
+`;
+
+const Footer = styled.footer`
+  font-size: .8rem;
+  text-align: center;
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -17,27 +28,13 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <React.Fragment>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <Inner>
           {children}
-          <footer
-            style={{
-              fontSize: '.8rem',
-              textAlign: 'center'
-            }}
-          >
-            Hello World, &copy; 2019
-          </footer>
-        </div>
-      </>
+          <Footer>Hello World, &copy; 2019</Footer>
+        </Inner>
+      </React.Fragment>
     )}
   />
 );

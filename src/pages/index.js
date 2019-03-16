@@ -5,8 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const Inner = styled.div`
-  margin-bottom: 1.45rem;
-  padding: 150px 0;
+  padding: 180px 0;
   text-align: center;
 `;
 
