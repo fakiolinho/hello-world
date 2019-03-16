@@ -23,6 +23,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaDescription,
               },
               {
+                name: 'robots',
+                content: 'NOINDEX, NOFOLLOW',
+              },
+              {
                 property: `og:title`,
                 content: title,
               },
