@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 import Header from './header';
 
@@ -12,7 +12,7 @@ const Inner = styled.div`
 `;
 
 const Footer = styled.footer`
-  font-size: .8rem;
+  font-size: .7rem;
   text-align: center;
 `;
 
